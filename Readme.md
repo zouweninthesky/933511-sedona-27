@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Иван Ван дер Заувен](https://up.htmlacademy.ru/htmlcss/27/user/933511).
-* Наставник: `Андрей Грачев`(https://htmlacademy.ru/profile/id252055).
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/id252055).
 
 ---
 
