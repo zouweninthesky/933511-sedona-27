@@ -1,0 +1,124 @@
+@font-face {
+	font-family: PT Sans;
+	src: local(PT Sans), url(fonts/ptsans.woff), url(fonts/ptsans.woff2);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: PT Sans;
+	src: local(PT Sans Bold), url(fonts/ptsansbold.woff), url(fonts/ptsansbold.woff2);
+	font-weight: bold;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	color: black;
+	text-transform: uppercase;
+	text-align: center;
+
+	background-color: #f2f2f2;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main-nav {
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+
+
+.nav_list a,
+.socials a {
+	color: black;
+}
+
+.nav_list a:hover {
+	color: #81b3d2;
+}
+
+.nav_list a:active {
+	color: #c7c7c7;
+}
+
+.nav_list,
+.advantages_list,
+.town_advantages_list,
+.socials {
+	list-style: none;
+}
+
+
+.advantages_list h3 {
+	font-weight: bold;
+	font-size: 21px;
+}
+
+.advantages_list {
+	background-color: #eee;
+
+}
+
+.blue_advantage {
+	color: white;
+
+	background-color: #81b3d2;
+}
+
+.town_advantages_list {
+	color: black;
+
+	background-color: white;
+}
+
+.search_form>p:first-of-type {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: bold;
+}
+
+a.arrow {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 0px;
+}
+
+.arrow::before {
+  border: 14px solid #81b3d2;
+  border-right-width: 8px;
+  border-right-color: transparent;
+  border-left-width: 8px;
+  border-left-color: transparent;
+  content: "";
+}
+
+.arrow_up::before {
+  border-top-width: 0;
+  display: inline-block;
+}
+
+.arrow_down::before {
+  border-bottom-width: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
