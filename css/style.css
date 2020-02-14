@@ -1,24 +1,23 @@
 @font-face {
 	font-family: PT Sans;
-	src: local(PT Sans), url(fonts/ptsans.woff), url(fonts/ptsans.woff2);
+	src: local(PT Sans), url(../fonts/ptsans.woff2) format("woff2"), url(../fonts/ptsans.woff) format ("woff");
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: PT Sans;
-	src: local(PT Sans Bold), url(fonts/ptsansbold.woff), url(fonts/ptsansbold.woff2);
+	src: local(PT Sans Bold), url(../fonts/ptsansbold.woff2) format("woff2"), url(../fonts/ptsansbold.woff) format ("woff");
 	font-weight: bold;
 }
 
 body {
 	margin: 0;
-	padding: 0;
 
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: normal;
-	color: black;
+	color: #000000;
 	text-transform: uppercase;
 	text-align: center;
 
@@ -39,7 +38,7 @@ a {
 
 .nav_list a,
 .socials a {
-	color: black;
+	color: #000000;
 }
 
 .nav_list a:hover {
@@ -69,15 +68,15 @@ a {
 }
 
 .blue_advantage {
-	color: white;
+	color: #ffffff;
 
 	background-color: #81b3d2;
 }
 
 .town_advantages_list {
-	color: black;
+	color: #000000;
 
-	background-color: white;
+	background-color: #ffffff;
 }
 
 .search_form>p:first-of-type {
