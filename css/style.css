@@ -1,12 +1,12 @@
 @font-face {
-	font-family: PTSans;
-	src: local(PT Sans), url(../fonts/ptsans.woff2) format("woff2"), url(../fonts/ptsans.woff) format("woff");
+	font-family: "PT Sans";
+	src: local("PT Sans"), url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
 	font-weight: normal;
 }
 
 @font-face {
-	font-family: PTSans;
-	src: local(PT Sans Bold), url(../fonts/ptsansbold.woff2) format("woff2"), url(../fonts/ptsansbold.woff) format("woff");
+	font-family: "PT Sans";
+	src: local("PT Sans Bold"), url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
 	font-weight: bold;
 }
 
@@ -15,7 +15,7 @@ body {
 	padding:0;
 
 	line-height: 21px;
-	font-family: "PTSans", Arial, sans-serif;
+	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
 	font-weight: normal;
 	color: #000000;
@@ -78,19 +78,6 @@ a {
 	background-color: #ffffff;
 }
 
-.nav_list {
-	margin: 0;
-	padding: 0 72px;
-	display: flex;
-	min-height: 56px;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.nav_list li {
-	width: 25%;
-}
-
 .main_nav a:focus,
 .button:focus,
 .socials a:focus,
@@ -102,6 +89,17 @@ a {
 .hotel_name:focus {
 	outline: 2px solid #669ec0;
 	outline-offset: 3px;
+}
+
+.nav_list {
+	margin: 0;
+	padding: 16px 72px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav_list li {
+	width: 25%;
 }
 
 .nav_list li:first-child,
@@ -198,7 +196,7 @@ a {
 }
 
 .advantages_list li {
-	min-height: 256px;
+	/*min-height: 256px; ПРОБЛЕМА*/ 
 }
 
 .advantages_list > li:first-child,
@@ -253,7 +251,6 @@ div.tile:nth-child(2) p {
 }
 
 .town_advantages_list {
-	min-height: 330px;
 	display: flex;
 	flex-direction: row;
 	flex-basis: 1200px;
@@ -264,20 +261,21 @@ div.tile:nth-child(2) p {
 }
 
 .town_advantage {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: center;
 	box-sizing: border-box;
 	padding: 0 58px;
-	padding-bottom: 82px;
+	padding-top: 153px;
+	padding-bottom: 86px;
 	width: 400px;
 	position: relative;
 }
 
+.town_advantage h3 {
+	margin: 0;
+}
+
 .town_advantage p {
 	margin: 0;
-	margin-top: 3px;
+	margin-top: 29px;
 }
 
 .town_advantage:nth-of-type(1)::before {
@@ -314,7 +312,6 @@ div.tile:nth-child(2) p {
 }
 
 .search_intro {
-	min-height: 291px;
 	display: flex;
 	flex-direction: column;
 }
@@ -369,12 +366,12 @@ div.tile:nth-child(2) p {
 }
 
 .search_wrapper {
-	min-height: 593px;
+	height: 593px;
 	position: relative;
 
 	font-weight: bold;
 
-	background-color: #ffffff;
+	background-color: #f2f1ef;
 	background-size: cover;
 	background-image: url(../img/map.png);
 }
@@ -385,8 +382,7 @@ div.tile:nth-child(2) p {
 	left: 50%;
 	margin-left: -284px;
 	width: 458px;
-	padding: 52px 55px;
-	min-height: 291px;
+	padding: 55px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -399,7 +395,7 @@ div.tile:nth-child(2) p {
 .search_item {
 	width: 458px;
 	margin: 0;
-	margin-bottom: 21px;
+	margin-bottom: 28px;
 	position: relative;	
 	display: flex;
 	justify-content: space-between;
@@ -538,11 +534,10 @@ div.tile:nth-child(2) p {
 }
 
 .footer {
-	min-height: 120px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
+
 	padding-left: 128px;
 	padding-right: 101px;
 
@@ -571,7 +566,7 @@ div.tile:nth-child(2) p {
 .socials {
 	margin: 0;
 	padding: 0;
-	padding-top: 36px;
+	padding-top: 35px;
 	padding-bottom: 36px;
 
 	line-height: 17px;
@@ -591,11 +586,15 @@ div.tile:nth-child(2) p {
 .socials_links {
 	display: flex;
 	justify-content: center;
+	padding-top: 34px;
+	padding-bottom: 34px;
 	min-width: 150px;
 }
 
 .socials_links li {
 	padding: 0 3px;
+	height:48px;
+	width:46px;
 }
 
 .social_icon {
@@ -625,7 +624,6 @@ div.tile:nth-child(2) p {
 }
 
 .filter_container form{
-	min-height: 155px;
 	display: flex;
 	padding-left: 72px;
 
@@ -658,17 +656,21 @@ div.tile:nth-child(2) p {
 .filter_section:first-child,
 .filter_section:nth-child(2) {
 	margin: 0;
-	margin-top: 30px;
-	margin-bottom: 31px;
+	margin-top: 27px;
+	margin-bottom: 10px;
 	margin-right: 140px;
 }
 
 .hotel_types_and_features {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	min-height: 114px;
-	padding-top: 29px;
+	padding-top: 25px;
+}
+
+.hotel_types_and_features li {
+	margin-bottom: 21px;
+}
+
+.hotel_types_and_features li:last-child {
+	margin-bottom: 0;
 }
 
 .filter_checkbox + label {
@@ -854,7 +856,6 @@ div.tile:nth-child(2) p {
 }
 
 .search_result_filter {
-	min-height: 86px;
 	display: flex;
 	align-items: baseline;
 	padding: 0 72px;
@@ -940,7 +941,6 @@ div.tile:nth-child(2) p {
 .hotel_search_result {
 	padding: 30px 72px;
 	display: flex;
-	min-height: 90px;
 	border-top: 1px solid #e5e5e5;
 }
 
