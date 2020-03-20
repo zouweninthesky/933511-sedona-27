@@ -164,26 +164,23 @@ a {
 }
 
 .advantages_intro p:first-child {
-	margin: 0;
 	margin-top:; 
 	padding: 0 380px;
+
+	line-height: 26px;
+	font-size: 21px;
+	font-weight: bold;
 }
 
 .advantages_intro p:last-child {
-	margin: 0;
 	margin-top: 29px; 
 	padding: 0 355px;
+	color: #333333;
 }
 
 .advantages_intro,
 .search_intro {
 	background-color: #ffffff;
-}
-
-.advantages_intro p:first-child {
-	line-height: 26px;
-	font-size: 21px;
-	font-weight: bold;
 }
 
 .advantages_list {
@@ -211,13 +208,15 @@ a {
 }
 
 .tile {
+	margin: 0;
 	box-sizing: border-box;
 	padding: 30px 45px 50px;
 	width: 400px;
 }
 
 .tile h3 {
-	margin: 0;
+	margin-block-end: 0;
+	margin-block-start: 0;
 	margin-bottom: 30px;
     padding: 0 75px;
 
@@ -230,12 +229,21 @@ li.tile:last-child h3 {
 	padding: 0 80px;
 }
 
+.tile span {
+	margin-block-end: 0;
+	margin-block-start: 0;
+
+	line-height: 24px;
+	color: #333333;
+}
+
 .tile p {
 	margin: 0;
 	margin-top: 30px;
 	padding: 0 15px;
 
     line-height: 25px;
+    color: #333333;
 }
 
 div.tile:nth-child(2) p {
@@ -271,11 +279,13 @@ div.tile:nth-child(2) p {
 
 .town_advantage h3 {
 	margin: 0;
+	font-size: 21px;
 }
 
 .town_advantage p {
 	margin: 0;
 	margin-top: 29px;
+	color: #333333;
 }
 
 .town_advantage:nth-of-type(1)::before {
@@ -327,6 +337,10 @@ div.tile:nth-child(2) p {
 	font-weight: bold;
 	margin-top:52px;
 	margin-bottom:22px;
+}
+
+.search_intro p:nth-of-type(2) {
+	color: #333333;
 }
 
 .search_intro .button {
@@ -894,7 +908,7 @@ div.tile:nth-child(2) p {
 .search_sorting a {
 	border-bottom: 1px dotted #81b3d2;
 
-	color: #b2b2b2;
+	color: rgba(0, 0, 0, 0.3);
 }
 
 .search_sorting a[href]:hover {
