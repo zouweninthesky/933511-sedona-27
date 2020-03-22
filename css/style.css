@@ -134,7 +134,7 @@ a {
 .welcome_container {
 	padding-top: 76px;
 	padding-bottom: 78px;
-	background: url(../img/polygon.svg) no-repeat, url(../img/background_photo.jpg) no-repeat;
+	background: url("../img/polygon.svg") no-repeat, url("../img/background_photo.jpg") no-repeat;
 	background-color: #9dcee9;
 	background-position: 0 451px, 0 -56px;
 	background-size: contain, cover;
@@ -213,6 +213,7 @@ li.tile:last-child h3 {
 
 .tile span {
 	margin: 0;
+	vertical-align: top;
 	display: inline-block;
 	color: #333333;
 }
@@ -286,7 +287,7 @@ div.tile:nth-child(2) p {
 	left: 162px;
 	width: 75px;
 	height: 72px;
-	background-image: url(../img/house_icon.svg);
+	background-image: url("../img/house_icon.svg");
 }
 
 .town_advantage:nth-of-type(2)::before {
@@ -296,7 +297,7 @@ div.tile:nth-child(2) p {
 	left: 163px;
 	width: 74px;
 	height: 70px;
-	background-image: url(../img/burger_icon.svg);
+	background-image: url("../img/burger_icon.svg");
 }
 
 .town_advantage:nth-of-type(3)::before {
@@ -306,7 +307,7 @@ div.tile:nth-child(2) p {
 	left: 168px;
 	width: 64px;
 	height: 76px;
-	background-image: url(../img/present_icon.svg);
+	background-image: url("../img/present_icon.svg");
 }
 
 .search_intro {
@@ -369,7 +370,7 @@ div.tile:nth-child(2) p {
 	font-weight: bold;
 	background-color: #f2f1ef;
 	background-size: cover;
-	background-image: url(../img/map.png);
+	background-image: url("../img/map.png");
 }
 
 .search_wrapper form {
@@ -614,7 +615,7 @@ div.tile:nth-child(2) p {
 	display: flex;
 	padding-left: 72px;
 	background-color: #81b3d2;
-	background-image: url(../img/filter_background.jpg);
+	background-image: url("../img/filter_background.jpg");
 	background-position: 0 -50px;
 }
 
@@ -678,12 +679,12 @@ div.tile:nth-child(2) p {
 	height: 23px;
 	margin-right: 20px;
 	cursor: pointer;
-	background: url(../img/checkbox_off.svg) no-repeat;
+	background: url("../img/checkbox_off.svg") no-repeat;
 }
 
 .filter_checkbox:checked+label::before {
 	width: 27px;
-	background: url(../img/checkbox_on.svg) no-repeat;
+	background: url("../img/checkbox_on.svg") no-repeat;
 }
 
 .filter_checkbox:disabled+label::before {
@@ -935,6 +936,7 @@ div.tile:nth-child(2) p {
 
 .hotel_search_result span {
 	display: inline-block;
+	vertical-align: top;
 	width: 112px;
 	padding-bottom: 20px;
 }
@@ -967,6 +969,7 @@ div.tile:nth-child(2) p {
 	bottom: 0;
 	box-sizing: border-box;
 	display: inline-block;
+	vertical-align: top;
 	height: 27px;
 	width: 110px;
 	padding-top: 3px;
@@ -1005,7 +1008,7 @@ div.tile:nth-child(2) p {
 	position: absolute;
 	top: -64px;
 	right: -5px;
-	background-image: url(../img/star.svg);
+	background-image: url("../img/star.svg");
 }
 
 .hotel_search_result:nth-child(2) .rating::before {
